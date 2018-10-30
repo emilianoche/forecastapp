@@ -19,7 +19,8 @@ class App extends Component {
     }
     this.getCities = this.getCities.bind(this);
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.buildCities = this.buildCities.bind(this);
   }
   handleChange(e){
     console.log(e.target.value);
@@ -33,17 +34,27 @@ class App extends Component {
     .catch(error => this.setState({error}))
   }
 
-  handleSubmit(){
+  handleSubmit(e){
+    e.preventDefault();
     this.getCities(this.state.cityName)
   }
+
+  buildCities(){
+    if(this.state.isFinded){
+      return <div><Cities cities={this.state.cities.list} /></div>;
+    }
+    return null;
+  }
+
   render() {
+    const cities = this.buildCities();
     return (
       <div className="App">
         <Header
         handleSubmit={this.handleSubmit}
         handleChange={this.handleChange}
         />
-        {this.state.cities.length ? <Cities /> : null}
+        {cities}
       </div>
     );
   }
