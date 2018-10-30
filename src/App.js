@@ -5,7 +5,7 @@ import Cities from './Cities/Cities';
 // @ utilities
 import axios from 'axios';
 // @ style
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   constructor(){
@@ -43,7 +43,7 @@ class App extends Component {
         handleSubmit={this.handleSubmit}
         handleChange={this.handleChange}
         />
-        {this.state.cities.length ? <Cities />}
+        {this.state.cities.length ? <Cities /> : null}
       </div>
     );
   }
