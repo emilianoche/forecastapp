@@ -22,3 +22,14 @@ header {
   outline: 0;
   border: 0;
 }
+
+.home-button {
+  opacity: 0.6;
+    background: darkgray;
+    color: #FFF;
+    float: left;
+    width: 72px;
+    margin-top: 1%;
+    height: 40px;
+    margin-left: 12px;
+}

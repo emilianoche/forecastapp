@@ -79,7 +79,6 @@ main {
 }
 
 footer {
-  position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
   color: #eee;
@@ -111,6 +110,21 @@ footer .row {
 }
 
 .single__map {
-    width: calc(100% + 6rem);
+    width: 100%;
     margin: 0 auto;
+}
+
+.weather-current {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  div {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 17px 0px, rgba(0, 0, 0, 0.188) 0px 6px 20px 0px;
+    width: 40%;
+    padding-top: 10px;
+  }
+}
+
+.weather-dates {
+  font-size: 20px;
 }
