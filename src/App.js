@@ -120,7 +120,7 @@ class App extends Component {
 
   render() {
     const cities = this.buildCities();
-    let searchs = JSON.parse(localStorage.getItem("searchs")).sort();
+    let searchs = JSON.parse(localStorage.getItem("searchs"));
     return (
       <div className="App">
         <Header
