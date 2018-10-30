@@ -181,6 +181,13 @@ body {
     height: 200px;
     width: 250px;
     margin: 10px;
+      &:hover {
+        background-color: ivory;
+        cursor: pointer;
+      }
+      &:active {
+        background-color: seashell;
+      }
     
     @media screen and (max-width: 600px) {
       display: block;

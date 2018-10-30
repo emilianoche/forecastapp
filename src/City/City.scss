@@ -1,0 +1,116 @@
+
+main {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.spinner {
+  margin-top: 1em;
+}
+
+#weather-card {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 17px 0px,
+    rgba(0, 0, 0, 0.188) 0px 6px 20px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  max-width: 800px;
+  min-height: 22em;
+  min-width: 270px;
+}
+
+@media (max-width: 600px) {
+  #weather-card {
+    margin-top: 3%;
+  }
+  .temperature-details {
+    text-align: center;
+  }
+  #summary {
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+
+.col.graph-btn-col {
+  padding: 0;
+  margin: 10px auto 0;
+  border: 1px solid #ddd;
+}
+
+.graph-btn {
+  width: 100%;
+}
+
+#temperature {
+  font-size: 48px;
+  line-height: 1em;
+  vertical-align: 0.15em;
+}
+
+#degree-units {
+  vertical-align: top;
+  cursor: pointer;
+}
+
+#summary h6 {
+  margin-top: 0.05em;
+  white-space: nowrap;
+}
+
+.forecast-day {
+  border: 1px solid #efefef;
+}
+
+.high-temp,
+.low-temp {
+  margin: 0;
+  padding: 0;
+}
+
+.location-warning {
+  line-height: 0.75em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #eee;
+  min-width: 280px;
+  width: 100%;
+}
+
+footer .row {
+  line-height: 0.75em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  max-height: 52px;
+}
+
+.logo-wu {
+  width: 120px;
+}
+
+#error {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  font-size: 20px;
+  left: 15vh;
+  position: absolute;
+  padding: 2em;
+  right: 15vh;
+  top: 30vh;
+  display: none;
+}
+
+.single__map {
+    width: calc(100% + 6rem);
+    margin: 0 auto;
+}
