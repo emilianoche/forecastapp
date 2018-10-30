@@ -1,0 +1,24 @@
+header {
+  height: 84px;
+  width: 100%;
+}
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  background: #303030;
+  height: 100%;
+}
+
+.nav__section--search {
+  position: relative;
+  width: 57%;
+}
+.search__input {
+  font-size: 30px;
+  background: none;
+  color: white;
+  outline: 0;
+  border: 0;
+}
