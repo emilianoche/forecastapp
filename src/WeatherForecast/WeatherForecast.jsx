@@ -36,11 +36,11 @@ export default class WeatherForecast extends Component {
 
   render() {
     return (
-      <div class="forecast">
+      <div className="forecast">
         {this.state.cityWeek.map(city => {
           let date = moment(city.dt_txt).format('dddd');
           return (
-            <div class="forecast-day">
+            <div key={city.dt} className="forecast-day">
                 <div>{date}</div>
                 <div>
                   <img src={`https://openweathermap.org/img/w/${city.weather[0].icon}.png`} alt=""/>

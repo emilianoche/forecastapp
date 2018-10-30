@@ -6,7 +6,7 @@ class Header extends Component {
       <header>
         <nav className="nav">
           <div className="nav__section">
-            <button className="home-button" onClick={this.props.goHome}>Home</button>
+            <button className="home-button" onClick={() => this.props.goHome()}>Home</button>
           </div>
           <div className="nav__section--search">
             <form onSubmit={this.props.handleSubmit}>
